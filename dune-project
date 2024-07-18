@@ -1,7 +1,7 @@
 (lang dune 3.15)
 
 (name caml-libsdl2-ttf)
-(version 2.0)
+(version 1.0)
 
 (generate_opam_files true)
 
