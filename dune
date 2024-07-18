@@ -1,0 +1,24 @@
+
+(rule
+ (targets c_flags.sexp)
+  (action
+ (with-stdout-to c_flags.sexp
+    (system "echo -n '('; pkg-config --cflags SDL2_ttf; echo -n ')'"))))
+
+(rule
+ (targets c_library.sexp)
+  (action
+ (with-stdout-to c_library.sexp
+    (system "echo -n '('; pkg-config --libs SDL2_ttf; echo -n ')'"))))
+
+(library
+ (name ttf)
+ (public_name caml-libsdl2-ttf)
+ (libraries caml-libsdl2)
+ (modes native)
+ (foreign_stubs
+  (language c)
+  (names ttf_stub)
+  (flags :standard (:include c_flags.sexp)))
+ (c_library_flags (:include c_library.sexp)))
+
