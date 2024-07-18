@@ -24,7 +24,12 @@
  (name caml-libsdl2-ttf)
  (synopsis "Bindings to the SDL2 ttf library")
  (description "Bindings to the SDL2 ttf library")
- (depends ocaml dune caml-libsdl2 conf-sdl2-ttf unix)
+ (depends
+   ocaml
+   dune
+   caml-libsdl2
+   conf-sdl2-ttf
+   (unix :with-test))
  (tags
   (topics bindings graphics image loader)))
 

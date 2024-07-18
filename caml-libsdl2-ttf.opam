@@ -15,7 +15,7 @@ depends: [
   "dune" {>= "3.15"}
   "caml-libsdl2"
   "conf-sdl2-ttf"
-  "unix"
+  "unix" {with-test}
   "odoc" {with-doc}
 ]
 build: [
