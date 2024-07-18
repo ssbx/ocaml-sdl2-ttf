@@ -7,13 +7,13 @@ maintainer: ["Seb"]
 authors: ["Seb"]
 license: "BSD Zero Clause License"
 tags: ["topics" "bindings" "graphics" "image" "loader"]
-homepage: "https://github.com/ssbx/caml-libsdl2-ttf"
-doc: "https://github.com/ssbx/caml-libsdl2-ttf"
-bug-reports: "https://github.com/ssbx/caml-libsdl2-ttf/issues"
+homepage: "https://github.com/ssbx/caml-sdl2-ttf"
+doc: "https://github.com/ssbx/caml-sdl2-ttf"
+bug-reports: "https://github.com/ssbx/caml-sdl2-ttf/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.15"}
-  "caml-libsdl2"
+  "caml-sdl2"
   "conf-sdl2-ttf"
   "unix" {with-test}
   "odoc" {with-doc}
@@ -32,4 +32,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/ssbx/caml-libsdl2-ttf.git"
+dev-repo: "git+https://github.com/ssbx/caml-sdl2-ttf.git"

@@ -1,3 +1,5 @@
+open CamlSDL2
+
 (** {:https://wiki.libsdl.org/SDL2_ttf/CategoryAPI} *)
 
 module Font : sig

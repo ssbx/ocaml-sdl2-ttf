@@ -5,9 +5,9 @@
 #include <caml/fail.h>
 
 #include <SDL_ttf.h>
-#include "ttf_stub.h"
-#include "surface_stub.h"
-#include "pixel_stub.h"
+#include "camlsdl2_ttf/ttf_stub.h"
+#include "camlsdl2/surface_stub.h"
+#include "camlsdl2/pixel_stub.h"
 
 CAMLprim value
 caml_TTF_Init(value unit)

@@ -1,3 +1,5 @@
+open CamlSDL2
+
 (** {:https://wiki.libsdl.org/SDL2_ttf/CategoryAPI} *)
 
 let get_error = Sdl.get_error

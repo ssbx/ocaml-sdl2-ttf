@@ -12,11 +12,11 @@
     (system "echo -n '('; pkg-config --libs SDL2_ttf; echo -n ')'"))))
 
 (library
- (name ttf)
- (public_name caml-libsdl2-ttf)
- (libraries caml-libsdl2)
+ (name camlSDL2_ttf)
+ (public_name caml-sdl2-ttf)
+ (libraries caml-sdl2)
  (modes native)
- (install_c_headers ttf_stub)
+ (public_headers (glob_files camlsdl2_ttf/*.h))
  (foreign_stubs
   (language c)
   (names ttf_stub)

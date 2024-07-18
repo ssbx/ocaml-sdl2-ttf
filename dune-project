@@ -1,12 +1,12 @@
 (lang dune 3.15)
 
-(name caml-libsdl2-ttf)
+(name caml-sdl2-ttf)
 (version 1.0)
 
 (generate_opam_files true)
 
 (source
- (github ssbx/caml-libsdl2-ttf))
+ (github ssbx/caml-sdl2-ttf))
 
 (authors "Seb")
 
@@ -14,20 +14,20 @@
 
 (license "BSD Zero Clause License")
 
-(documentation https://github.com/ssbx/caml-libsdl2-ttf)
+(documentation https://github.com/ssbx/caml-sdl2-ttf)
 
 (use_standard_c_and_cxx_flags true)
 
 (formatting (enabled_for ocaml))
 
 (package
- (name caml-libsdl2-ttf)
+ (name caml-sdl2-ttf)
  (synopsis "Bindings to the SDL2 ttf library")
  (description "Bindings to the SDL2 ttf library")
  (depends
    ocaml
    dune
-   caml-libsdl2
+   caml-sdl2
    conf-sdl2-ttf
    (unix :with-test))
  (tags
