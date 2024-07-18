@@ -1,6 +1,8 @@
 #ifndef _CAML_TTF_STUB_H_
 #define _CAML_TTF_STUB_H_
 
+#include <SDL_ttf.h>
+
 static value Val_TTF_Font(TTF_Font * p)
 {
 	return caml_copy_nativeint((intnat) p);
