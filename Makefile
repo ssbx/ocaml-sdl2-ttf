@@ -18,4 +18,4 @@ doc:
 	dune build @doc && $(BROWSER) _build/default/_doc/_html/caml-libsdl2-image/Sdl_image/index.html
 
 dev_update:
-	opam install --working-dir ./caml-libsdl2-ttf.opam
+	opam install -v --working-dir ./caml-libsdl2-ttf.opam
