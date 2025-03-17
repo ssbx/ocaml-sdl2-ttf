@@ -28,7 +28,6 @@
    ocaml
    dune
    caml-sdl2
-   conf-sdl2-ttf
    (unix :with-test))
  (tags
   (topics bindings graphics image loader)))
